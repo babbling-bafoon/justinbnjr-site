@@ -1,0 +1,15 @@
+title: Justin Bonjour
+description: N0JBE — Mason City, Iowa. Digital modes, emcomm, nets.
+url: "https://babbling-bafoon.github.io"
+baseurl: "/justinbnjr-site"
+timezone: America/Chicago
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+plugins:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - .gitignore
