@@ -1,0 +1,130 @@
+:root {
+  --bg: #000000;
+  --fg: #33ff33;
+  --muted: #1a991a;
+  --link: #66ff66;
+  --border: #1a661a;
+}
+
+* { box-sizing: border-box; }
+
+html { font-size: 16px; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  line-height: 1.45;
+}
+
+.wrap {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 1.25rem 1rem 3rem;
+}
+
+a { color: var(--link); text-decoration: underline; }
+a:hover { color: #99ff99; }
+
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.site-title {
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--fg);
+}
+
+.site-header nav a {
+  margin-left: 0.85rem;
+  text-decoration: none;
+  color: var(--muted);
+}
+.site-header nav a:hover { color: var(--link); }
+
+h1, h2, h3 {
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0 0 0.75rem;
+}
+
+h1 { font-size: 1.25rem; }
+h2 { font-size: 1.1rem; }
+
+p { margin: 0 0 0.9rem; }
+
+ul, ol { margin: 0 0 0.9rem; padding-left: 1.25rem; }
+
+code, pre {
+  font-family: inherit;
+  background: #061406;
+}
+
+code {
+  padding: 0.05em 0.3em;
+  border: 1px solid var(--border);
+}
+
+pre {
+  padding: 0.75rem;
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  margin: 0 0 0.9rem;
+}
+pre code { border: 0; padding: 0; background: transparent; }
+
+.post-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.post-list li {
+  display: flex;
+  gap: 0.75rem;
+  padding: 0.2rem 0;
+  border-bottom: 1px dotted var(--border);
+}
+
+.post-list time {
+  flex: 0 0 6.5rem;
+  color: var(--muted);
+}
+
+.post-list a {
+  text-decoration: none;
+  color: var(--fg);
+}
+.post-list a:hover { color: var(--link); text-decoration: underline; }
+
+.meta { color: var(--muted); margin-bottom: 1.25rem; }
+
+.back { margin-top: 1.5rem; }
+.back a { color: var(--muted); text-decoration: none; }
+.back a:hover { color: var(--link); }
+
+.site-footer {
+  margin-top: 2.5rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+.site-footer a { color: var(--muted); }
+.site-footer a:hover { color: var(--link); }
+.site-footer p { margin: 0; }
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 1.25rem 0;
+}
